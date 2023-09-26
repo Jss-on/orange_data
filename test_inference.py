@@ -13,7 +13,7 @@ if __name__ == "__main__":
     model = joblib.load('best_audio_classifier.pkl')
     
     # Read the sample audio file
-    sample_rate, audio_data = wavfile.read('test.wav')
+    sample_rate, audio_data = wavfile.read('8.wav')
     
     # Extract MFCC features
     mfcc_features = extract_mfcc_features(audio_data, sample_rate)
